@@ -2,7 +2,7 @@ import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/canta
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/favourite_binding.dart';
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/recent_binding.dart';
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/cantact_view.dart';
-import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/dailpad_view.dart';
+
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/favorite_view.dart';
 
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/recent_view.dart';
@@ -44,11 +44,7 @@ class AppPages {
       page: () => CantactView(),
       binding: CantactBinding(),
     ),
-     GetPage(
-      name: _Paths.DAILPAD,
-      page: () => DailpadView(),
-      
-    )
+    
 
   ];
 }

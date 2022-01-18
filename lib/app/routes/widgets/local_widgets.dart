@@ -28,10 +28,13 @@ class BottomBar extends StatelessWidget {
           },
         ),
         IconButton(
+
           icon: Icon(Icons.people),
           onPressed: () {
             Get.offAllNamed(Routes.CANTACT);
           }
+          
+          
           
         ),
       ],

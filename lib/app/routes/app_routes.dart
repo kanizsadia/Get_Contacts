@@ -8,7 +8,7 @@ abstract class Routes {
     static const CANTACT = _Paths.CANTACT;
       static const RECENT = _Paths.RECENT;
         static const FAVORITE = _Paths.FAVORITE;
-        static const DAILPAD = _Paths.DAILPAD;
+        
 
 
 
@@ -21,5 +21,5 @@ abstract class _Paths {
    static const CANTACT = '/cantact';
     static const RECENT = '/recent';
      static const FAVORITE = '/favorite';
-     static const DAILPAD= '/dailpad';
+     
 }

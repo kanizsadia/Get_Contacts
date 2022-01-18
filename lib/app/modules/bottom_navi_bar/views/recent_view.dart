@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/controllers/recenct_controller_controller.dart';
-import 'package:flutter_application_6/app/routes/app_pages.dart';
+
+import 'package:flutter_application_6/app/routes/widgets/floating_button.dart';
 
 import 'package:get/get.dart';
 
@@ -32,22 +33,32 @@ class RecentView extends GetView {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(_dx.recent[index]["name"]),
-                                  Text(_dx.recent[index]["number"].toString()),
-                                  Text(_dx.recent[index]["time"]),
-                                 
-                                ],
+                               Expanded(
+                                 flex: 8,
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Text(_dx.recent[index]["name"]),
+                                        Text(_dx.recent[index]["number"].toString()),
+                                        Text(_dx.recent[index]["time"]),
+                                       
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
-                              SizedBox(width: 800,),
-                               Icon(Icons.call,
-                               color: Colors.green,
+                              
+                               Expanded(
+                                 flex: 1,
+                                 child: Icon(Icons.call,
+                                 color: Colors.green,
+                                 ),
                                )
                             ],
                           ),
-                          SizedBox(height: 5,)
+                          SizedBox(height: 10,)
                         ],
                       ),
                     );
@@ -58,12 +69,9 @@ class RecentView extends GetView {
           
         ],
       ),
-      floatingActionButton: FloatingActionButton(onPressed:(){
-        Get.toNamed(Routes.DAILPAD);
-      },
-      child: Icon(Icons.dialpad)    
-      ),
+      floatingActionButton: Floating_Button(),
        bottomNavigationBar: BottomBar(),
     );
   }
 }
+
