@@ -32,13 +32,29 @@ class RecentView extends GetView {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                                Expanded(
                                  flex: 8,
                                 child: Row(
                                   children: [
+                                    Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle,
+                        color: Colors.blue,
+                        
+                        ),
+                        child:  Icon(Icons.person,
+                          color: Colors.white,
+                          size: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(_dx.recent[index]["name"]),
                                         Text(_dx.recent[index]["number"].toString()),

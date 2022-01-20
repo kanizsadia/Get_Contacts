@@ -60,8 +60,29 @@ class CantactView extends GetView {
                   itemBuilder: (context, index) {
                     return ListTile(
                       title: Row(
+                        
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                            Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle,
+                        color: Colors.blue,
+                        
+                        ),
+                        child:  Icon(Icons.person,
+                          color: Colors.white,
+                          size: 30,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        
+                             
+                        
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(_dx.contact[index]["name"]),
                               Text(_dx.contact[index]["number"].toString()),

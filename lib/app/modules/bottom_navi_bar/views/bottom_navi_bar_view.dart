@@ -35,13 +35,25 @@ class BottomNaviBarView extends GetView<RecenctControllerController> {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                                Expanded(
                                  flex: 8,
                                 child: Row(
                                   children: [
+                                    Container(
+                          child: Icon(Icons.person,
+                          color: Colors.blue,
+                          size: 24,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(_dx.recent[index]["name"]),
                                         Text(_dx.recent[index]["number"].toString()),
