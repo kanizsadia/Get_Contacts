@@ -96,7 +96,7 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
-                calcbutton('x', Colors.transparent, Colors.black),
+                calcbutton('x', Colors.white, Colors.black),
                 
                 
                
@@ -108,9 +108,9 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calcbutton('7', Colors.transparent, Colors.blue),
-                calcbutton('8', Colors.transparent, Colors.blue),
-                calcbutton('9', Colors.transparent, Colors.blue),
+                calcbutton('7', Colors.white, Colors.blue),
+                calcbutton('8', Colors.white, Colors.blue),
+                calcbutton('9', Colors.white, Colors.blue),
               ],
             ),
             SizedBox(
@@ -119,9 +119,9 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calcbutton('4', Colors.transparent, Colors.blue),
-                calcbutton('5', Colors.transparent, Colors.blue),
-                calcbutton('6', Colors.transparent, Colors.blue),
+                calcbutton('4', Colors.white, Colors.blue),
+                calcbutton('5', Colors.white, Colors.blue),
+                calcbutton('6', Colors.white, Colors.blue),
               ],
             ),
             SizedBox(
@@ -130,9 +130,9 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calcbutton('1', Colors.transparent, Colors.blue),
-                calcbutton('2', Colors.transparent, Colors.blue),
-                calcbutton('3', Colors.transparent, Colors.blue),
+                calcbutton('1', Colors.white, Colors.blue),
+                calcbutton('2', Colors.white, Colors.blue),
+                calcbutton('3', Colors.white, Colors.blue),
               ],
             ),
             SizedBox(
@@ -141,9 +141,9 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calcbutton('*', Colors.transparent, Colors.black),
-                calcbutton('0', Colors.transparent, Colors.blue),
-                calcbutton('#', Colors.transparent, Colors.black),
+                calcbutton('*', Colors.white, Colors.black),
+                calcbutton('0', Colors.white, Colors.blue),
+                calcbutton('#', Colors.white, Colors.black),
               ],
             ),
             SizedBox(

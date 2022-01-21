@@ -41,15 +41,21 @@ class BottomNaviBarView extends GetView<RecenctControllerController> {
                                  flex: 8,
                                 child: Row(
                                   children: [
-                                    Container(
-                          child: Icon(Icons.person,
-                          color: Colors.blue,
-                          size: 24,
+                                     Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle,
+                        color: Colors.blue,
+                        
+                        ),
+                        child:  Icon(Icons.person,
+                          color: Colors.white,
+                          size: 40,
                           ),
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 15,
                         ),
+                        
+                             
                         
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.start,

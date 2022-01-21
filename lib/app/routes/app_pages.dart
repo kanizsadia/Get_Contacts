@@ -1,7 +1,11 @@
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/cantact_binding.dart';
+import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/contact_binding.dart';
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/favourite_binding.dart';
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/bindings/recent_binding.dart';
+
+
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/cantact_view.dart';
+import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/contact_view.dart';
 
 import 'package:flutter_application_6/app/modules/bottom_navi_bar/views/favorite_view.dart';
 
@@ -17,7 +21,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.BOTTOM_NAVI_BAR;
+  static const INITIAL = Routes.CONTACT;
 
   static final routes = [
    
@@ -43,6 +47,13 @@ class AppPages {
       name: _Paths.CANTACT,
       page: () => CantactView(),
       binding: CantactBinding(),
+    ),
+     GetPage(
+      name: _Paths.CONTACT,
+      page: () => ContactView(),
+       binding: ContactBinding(),
+
+   
     ),
     
 

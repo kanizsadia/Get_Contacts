@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_6/app/routes/widgets/floating_button.dart';
 import 'package:flutter_application_6/app/routes/widgets/local_widgets.dart';
@@ -59,38 +60,10 @@ class CantactView extends GetView {
                   itemCount: _dx.contact.length,
                   itemBuilder: (context, index) {
                     return ListTile(
-                      title: Row(
-                        
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                            Container(
-                        decoration: BoxDecoration(shape: BoxShape.circle,
-                        color: Colors.blue,
-                        
-                        ),
-                        child:  Icon(Icons.person,
-                          color: Colors.white,
-                          size: 30,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        
-                             
-                        
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                      title:
                               Text(_dx.contact[index]["name"]),
-                              Text(_dx.contact[index]["number"].toString()),
-                              
-                            ],
-                          ),
-                        ],
-                      ),
+                              subtitle:   Text(_dx.contact[index]["number"].toString()),
+                            
                     );
                   }),
             ),

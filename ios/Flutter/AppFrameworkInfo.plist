@@ -14,6 +14,8 @@
   <string>App</string>
   <key>CFBundlePackageType</key>
   <string>FMWK</string>
+  <key>NSContactsUsageDescription</key>  
+<string>This app requires contacts access to function properly.</string>
   <key>CFBundleShortVersionString</key>
   <string>1.0</string>
   <key>CFBundleSignature</key>
